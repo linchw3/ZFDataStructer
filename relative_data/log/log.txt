@@ -1,0 +1,280 @@
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 267, in process_one_item
+    dir_csv_w.writerow([data_item, time, loc, org, work])
+UnicodeEncodeError: 'gbk' codec can't encode character '\u0645' in position 1: illegal multibyte sequence
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 270, in process_one_item
+    dir_csv_w.writerow([data_item, time, loc, org, work])
+UnicodeEncodeError: 'gbk' codec can't encode character '\u0645' in position 1: illegal multibyte sequence
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 268, in process_one_item
+    csv_w.writerow([data_item, time, loc, org, work])
+UnicodeEncodeError: 'gbk' codec can't encode character '\u2027' in position 5: illegal multibyte sequence
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 270, in process_one_item
+    dir_csv_w.writerow([data_item, time, loc, org, work])
+UnicodeEncodeError: 'gbk' codec can't encode character '\ub85c' in position 5: illegal multibyte sequence
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 268, in process_one_item
+    csv_w.writerow([data_item, time, loc, org, work])
+UnicodeEncodeError: 'gbk' codec can't encode character '\uc720' in position 4: illegal multibyte sequence
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 270, in process_one_item
+    dir_csv_w.writerow([data_item, time, loc, org, work])
+UnicodeEncodeError: 'gbk' codec can't encode character '\u30fb' in position 8: illegal multibyte sequence
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 270, in process_one_item
+    dir_csv_w.writerow([data_item, time, loc, org, work])
+UnicodeEncodeError: 'gbk' codec can't encode character '\u017e' in position 7: illegal multibyte sequence
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 268, in process_one_item
+    csv_w.writerow([data_item, time, loc, org, work])
+UnicodeEncodeError: 'gbk' codec can't encode character '\uff64' in position 9: illegal multibyte sequence
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 268, in process_one_item
+    csv_w.writerow([data_item, time, loc, org, work])
+UnicodeEncodeError: 'gbk' codec can't encode character '\uff64' in position 20: illegal multibyte sequence
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 268, in process_one_item
+    csv_w.writerow([data_item, time, loc, org, work])
+UnicodeEncodeError: 'gbk' codec can't encode character '\uff64' in position 13: illegal multibyte sequence
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 268, in process_one_item
+    csv_w.writerow([data_item, time, loc, org, work])
+UnicodeEncodeError: 'gbk' codec can't encode character '\uff64' in position 14: illegal multibyte sequence
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 87, in make_mapping
+    loc_id = '001' + relative_data.loc_to_id[loc] + '00000000000'
+KeyError: '天津市河北区'
+Traceback (most recent call last):
+  File "C:/Users/sangfor/Downloads/zh-NER-TF-master/process.py", line 270, in process_one_item
+    dir_csv_w.writerow([data_item, time, loc, org, work])
+UnicodeEncodeError: 'gbk' codec can't encode character '\u30fb' in position 5: illegal multibyte sequence

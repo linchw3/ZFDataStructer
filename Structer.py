@@ -162,6 +162,7 @@ class Structer:
         return -1
 
     def get_time(self, data):
+        #print(data)
         searchObj = re.search(r'(\d{4}\.\d{1,2}(--)?(——)?—?-?-?－?至?)+|'
                               r'(\d{4}年\d{1,2}月(--)?(——)?—?-?-?－?至?)+|'
                               r'(\d{4}年?(--)?(——)?—?-?-?－?至?)+', data, re.M | re.I)
@@ -180,7 +181,7 @@ class Structer:
     def standard_loc(self, str):
         pass
 
-    def standard_org(self,words, loc, str, con, cur, csv):
+    def standard_org(self,words, loc, str, con, cur, csv = None):
         if str == -1:
             return  str
         #flag 用于判断是属于公司，政府机构， 还是 学校,默认政府机构
@@ -242,11 +243,12 @@ class Structer:
                         break
                 if rig == 1:
                     print(words, '----------------------------->', loc, min_different, str, '---->', likely_str)
-                    csv.writerow([words, loc, min_different, str, likely_str])
+                    #csv.writerow([words, loc, min_different, str, likely_str])
                 #print(str, '--------------------->', likely_str)
             str = likely_str
         else:
-            if str.find('市委') == -1 and str.find('省委') == -1 and len(str) > 1:
+            #if str.find('市委') == -1 and str.find('省委') == -1 and len(str) > 1:
+            if len(str) > 1:
                 db_operator.set_org_to_map(loc, str, con, cur)
         return str
 
