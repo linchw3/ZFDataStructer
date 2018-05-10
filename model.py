@@ -78,6 +78,8 @@ class BiLSTM_CRF(object):
                                 initializer=tf.contrib.layers.xavier_initializer(),
                                 dtype=tf.float32)
 
+            tf.add_to_collection('new_losses', tf.contrib.layers.l1_regularizer(0.003)(W))
+
             b = tf.get_variable(name="b",
                                 shape=[self.num_tags],
                                 initializer=tf.zeros_initializer(),
@@ -101,7 +103,11 @@ class BiLSTM_CRF(object):
                                                                     labels=self.labels)
             mask = tf.sequence_mask(self.sequence_lengths)
             losses = tf.boolean_mask(losses, mask)
-            self.loss = tf.reduce_mean(losses)
+            # self.loss = tf.reduce_mean(losses)
+            crf_loss = tf.reduce_mean(losses)
+            tf.add_to_collection('new_losses', crf_loss)
+
+            self.loss = tf.add_n(tf.get_collection('new_losses'))
 
         tf.summary.scalar("loss", self.loss)
 

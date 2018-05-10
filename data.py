@@ -1,5 +1,6 @@
 import sys, pickle, os, random
 import numpy as np
+from gensim.models import word2vec
 
 ## tags, BIO
 tag2label = {"O": 0,
@@ -7,6 +8,18 @@ tag2label = {"O": 0,
              "B-LOC": 3, "I-LOC": 4,
              "B-ORG": 5, "I-ORG": 6
              }
+
+'''
+
+tag2label = {"O": 0,
+             "B-PER": 1, "I-PER": 2,
+             "B-LOC": 3, "I-LOC": 4,
+             "B-ORG": 5, "I-ORG": 6,
+             "B-WOR": 7, "I-WOR": 8
+             }
+
+
+'''
 
 
 def read_corpus(corpus_path):
@@ -114,6 +127,29 @@ def random_embedding(vocab, embedding_dim):
     return embedding_mat
 
 
+def word2vec_embedding(vocab, model):
+    array_list = []
+    # array_list.append(model['<PAD>'].tolist())
+    array_list.append(model['<UNK>'].tolist())
+    num = 0
+    for item in vocab:
+        if item == '<PAD>' or item == '<UNK>':
+            continue
+        try:
+            array_list.append(model[item].tolist())
+        except:
+            num += 1
+            print(item)
+            array_list.append(model['<UNK>'].tolist())
+    array_list.append(model['<UNK>'].tolist())
+    print(num)
+    vector = np.array(array_list)
+    embedding_mat = np.float32(vector)
+    return embedding_mat
+
+
+
+
 def pad_sequences(sequences, pad_mark=0):
     """
 
@@ -159,3 +195,9 @@ def batch_yield(data, batch_size, vocab, tag2label, shuffle=False):
     if len(seqs) != 0:
         yield seqs, labels
 
+
+if __name__ == "__main__":
+    model = word2vec.Word2Vec.load('relative_data/embedding_model/embedding_201804262.model')
+    word2id = read_dictionary('data_path/word2id.pkl')
+    embeddings = word2vec_embedding(word2id, model)
+    print(embeddings)

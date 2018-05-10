@@ -3,7 +3,8 @@ import numpy as np
 import os, argparse, time, random
 from model import BiLSTM_CRF
 from utils import str2bool, get_logger, get_entity
-from data import read_corpus, read_dictionary, tag2label, random_embedding
+from data import read_corpus, read_dictionary, tag2label, random_embedding, word2vec_embedding
+from gensim.models import word2vec
 
 
 ## Session configuration
@@ -38,7 +39,10 @@ args = parser.parse_args()
 ## get char embeddings
 word2id = read_dictionary(os.path.join('.', args.train_data, 'word2id.pkl'))
 if args.pretrain_embedding == 'random':
-    embeddings = random_embedding(word2id, args.embedding_dim)
+    model = word2vec.Word2Vec.load('relative_data/embedding_model/embedding_201804262.model')
+    word2id = read_dictionary('data_path/word2id.pkl')
+    embeddings = word2vec_embedding(word2id, model)
+    #embeddings = random_embedding(word2id, args.embedding_dim)
 else:
     embedding_path = 'pretrain_embedding.npy'
     embeddings = np.array(np.load(embedding_path), dtype='float32')
