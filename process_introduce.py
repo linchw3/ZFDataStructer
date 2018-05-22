@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import re
-
+import csv
+import random
 
 def get_year_pos(mess_text):
     '''
@@ -172,8 +173,57 @@ def process_introduce(mess_text):
 
 
 if __name__ == "__main__":
-    text = '19４９年１月西海工商局税务科审计员；１９４９年１月-１９５５年３月省财政厅和税务局办事员、科员；１９５５年３月'
-    structural_data = process_introduce(text)
-    if structural_data is not None:
-        for item in structural_data:
-            print(item)
+    # text = '19４９年１月，西海工商局税务科审计员，１９４９年１月-１９５５年３月，省财政厅和税务局办事员、科员，１９５５年３月'
+    # structural_data = process_introduce(text)
+    # if structural_data is not None:
+    #     for item in structural_data:
+    #         print(item)
+    # time = 0
+    # filename = 'relative_data/data_from_db.csv'
+    # fo = open("test.txt", "w")
+    #
+    # # fo.write("www.runoob.com!\nVery good site!\n")
+    # with open(filename) as f:
+    #     reader = csv.reader(f)
+    #     for row in reader:
+    #         #print(row)
+    #         if row == []:
+    #             continue
+    #         data = process_introduce(row[0])
+    #         if not data:
+    #             continue
+    #         for item in data:
+    #             if random.random()*5000 < 1.0:
+    #                 print(item[0] + item[1])
+    #                 dastr = item[1]
+    #                 for i in range(len(dastr)):
+    #                     fo.write(dastr[i] + '\n')
+    #                 fo.write('\n')
+    #                 time += 1
+    #                 if time == 100:
+    #                     break
+
+
+
+    filename = 'test.txt'
+    fo = open("struct_test.txt", "w")
+    with open(filename,encoding='gbk') as f:
+        lines = f.readlines()
+        for line in lines:
+            if line == '\n':
+                fo.write(line)
+            else:
+                data = line.strip().split()
+                if len(data) < 2:
+                    print(data)
+                    continue
+                else:
+                    fo.write(data[0] + ' ' + data[1] + ' ')
+                    if len(data) > 2:
+                        fo.write(data[2] + '\n')
+                    else:
+                        fo.write('0' + '\n')
+    fo.close()
+
+
+
