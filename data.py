@@ -44,6 +44,29 @@ def read_corpus(corpus_path):
     return data
 
 
+def read_corpus_nested(corpus_path):
+    """
+    read corpus and return the list of samples
+    :param corpus_path:
+    :return: data
+    """
+    data = []
+    with open(corpus_path, encoding='utf-8') as fr:
+        lines = fr.readlines()
+    sent_, tag_ , tag_nested_ = [], [], []
+    for line in lines:
+        if line != '\n':
+            [char, label, label_nested] = line.strip().split()
+            sent_.append(char)
+            tag_.append(label)
+            tag_nested_.append(label_nested)
+        else:
+            data.append((sent_, tag_, tag_nested_))
+            sent_, tag_, tag_nested_ = [], [], []
+
+    return data
+
+
 def vocab_build(vocab_path, corpus_path, min_count):
     """
 
@@ -194,6 +217,36 @@ def batch_yield(data, batch_size, vocab, tag2label, shuffle=False):
 
     if len(seqs) != 0:
         yield seqs, labels
+
+
+def batch_yield_nested(data, batch_size, vocab, tag2label, shuffle=False):
+    """
+
+    :param data:
+    :param batch_size:
+    :param vocab:
+    :param tag2label:
+    :param shuffle:
+    :return:
+    """
+    if shuffle:
+        random.shuffle(data)
+
+    seqs, labels, labels_nested = [], [], []
+    for (sent_, tag_, tag_nested_) in data:
+        sent_ = sentence2id(sent_, vocab)
+        #label_ = [tag2label[tag] for tag in tag_]
+
+        if len(seqs) == batch_size:
+            yield seqs, labels
+            seqs, labels, labels_nested = [], [], []
+
+        seqs.append(sent_)
+        labels.append(tag_)
+        labels_nested.append(tag_nested_)
+
+    if len(seqs) != 0:
+        yield seqs, labels, labels_nested
 
 
 if __name__ == "__main__":

@@ -52,9 +52,10 @@ else:
 if args.mode != 'demo':
     train_path = os.path.join('.', args.train_data, 'train_data')
     test_path = os.path.join('.', args.test_data, 'test_data')
+    # this two line should change
     train_data = read_corpus(train_path)
     test_data = read_corpus(test_path); test_size = len(test_data)
-
+    # this is the end
 
 ## paths setting
 paths = {}
